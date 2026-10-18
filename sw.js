@@ -1,5 +1,5 @@
 /* ============================================================
-   arahOS OIT Help Desk — Service Worker (PWA offline support)
+   tikova Help Desk — Service Worker (PWA offline support)
    Strategy:
      - Static assets (css/js/images/fonts): cache-first
      - HTML pages: network-first, fall back to cache + offline page
