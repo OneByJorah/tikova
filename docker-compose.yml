@@ -7,7 +7,7 @@ services:
       - "127.0.0.1:${HOST_PORT:-8080}:8080"
     environment:
       DEMO_MODE: ${DEMO_MODE:-true}
-      PROJECT_NAME: ${PROJECT_NAME:-Project Name}
+      PROJECT_NAME: ${PROJECT_NAME:-tikova}
     restart: unless-stopped
     read_only: true
     cap_drop:

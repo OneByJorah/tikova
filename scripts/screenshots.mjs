@@ -17,7 +17,9 @@ const RECORD = process.env.RECORD === "1";
 
 // Edit this list per project: one entry per screen worth showing.
 const PAGES = [
-  { name: "dashboard", path: "/", waitFor: "#app-ready" },
+  { name: "client-portal", path: "/", waitFor: "#client .list" },
+  { name: "staff-panel", path: "/staff-preview.html", waitFor: "#staff-header" },
+  { name: "client-portal-mobile", path: "/", waitFor: "#client .list", viewport: { width: 390, height: 844 } },
 ];
 
 const FORBIDDEN = [
@@ -25,6 +27,11 @@ const FORBIDDEN = [
   { label: "tailnet IPv4", re: /\b100\.(?:6[4-9]|[7-9]\d|1[01]\d|12[0-7])\.\d{1,3}\.\d{1,3}\b/ },
   { label: "email address", re: /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i },
   { label: "school domain", re: /\bk12\.vi\b/i },
+  // Project-specific: leftovers from the theme's original deployment target.
+  { label: "old client abbreviation", re: /\bVIDE\b/ },
+  { label: "old region code", re: /\b(?:STX|STTJ)\b/ },
+  { label: "old phone prefix", re: /\b340[- )]/ },
+  { label: "old school name", re: /Charlotte Amalie|Ivanna Eudora|St\. Croix Educational/i },
   ...(process.env.SCRUB_PATTERNS || "")
     .split(",")
     .map((p) => p.trim())
@@ -52,6 +59,7 @@ const context = await browser.newContext({
 let failed = false;
 for (const p of PAGES) {
   const page = await context.newPage();
+  if (p.viewport) await page.setViewportSize(p.viewport);
   await page.goto(new URL(p.path, BASE).toString(), { waitUntil: "networkidle" });
   if (p.waitFor) await page.waitForSelector(p.waitFor, { timeout: 15000 });
 

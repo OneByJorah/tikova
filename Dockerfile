@@ -1,20 +1,17 @@
 # syntax=docker/dockerfile:1
-# Multi-stage, non-root, with a healthcheck. Replace the demo app with your project.
+# tikova demo image: Node static server for the theme preview + /healthz.
+# The production product is the theme itself (install.sh into an osTicket
+# 1.18.x upload dir) — this image exists so the preview can be demoed and
+# screenshotted with one command.
 # Tip: once you have verified a base image, pin it by digest (image@sha256:...).
 # Dependabot's docker ecosystem keeps tags/digests current.
-
-FROM node:26-alpine AS build
-WORKDIR /app
-COPY app/ ./
-# Example for a project with dependencies:
-#   COPY app/package*.json ./
-#   RUN npm ci --omit=dev
-#   COPY app/ ./
 
 FROM node:26-alpine
 ENV NODE_ENV=production PORT=8080
 WORKDIR /app
-COPY --from=build --chown=node:node /app ./
+COPY --chown=node:node app/server.js ./server.js
+COPY --chown=node:node preview/ ./preview/
+COPY --chown=node:node theme/ ./theme/
 USER 1000
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \

@@ -1,30 +1,38 @@
 {
-  "name": "ticketforge",
+  "name": "tikova",
   "version": "1.0.0",
-  "description": "Lightweight issue tracking and project management \u2014 tickets, boards, milestones, and team collaboration with Docker deployment.",
+  "description": "Merged osTicket helpdesk theme + plugin — landing page, staff logins, PWA assets, and a Docker preview stack.",
   "main": "index.js",
   "scripts": {
     "test": "echo 'ok' && exit 0"
   },
   "keywords": [
-    "ticketforge",
-    "docker",
-    "self-hosted",
-    "jorahone"
+    "tikova",
+    "osticket",
+    "helpdesk",
+    "theme",
+    "plugin",
+    "pwa",
+    "self-hosted"
   ],
   "author": "OneByJorah <info@jorahone.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OneByJorah/TicketForge.git"
+    "url": "https://github.com/OneByJorah/tikova.git"
   },
   "bugs": {
-    "url": "https://github.com/OneByJorah/TicketForge/issues"
+    "url": "https://github.com/OneByJorah/tikova/issues"
   },
-  "homepage": "https://github.com/OneByJorah/TicketForge#readme",
+  "homepage": "https://github.com/OneByJorah/tikova#readme",
   "files": [
-    "dist/",
-    "README.md",
+    "theme/",
+    "css/",
+    "js/",
+    "plugin/",
+    "include/",
+    "index.php",
+    "install.sh",
     "LICENSE"
   ],
   "publishConfig": {

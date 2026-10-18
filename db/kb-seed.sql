@@ -1,4 +1,4 @@
--- arahOS OIT Knowledge Base seed: categories + FAQs/tutorials
+-- Help Desk knowledge base seed (demo data): categories + FAQs/tutorials
 SET @now = NOW();
 
 -- Categories (ispublic=1 so they show on the public portal)
@@ -17,7 +17,7 @@ INSERT INTO ost_faq (category_id, ispublished, question, answer, keywords, notes
  '<p>A arahOS account is your official Virgin Islands Department of Education network login (usually <b>firstname.lastname</b>). It gives you access to email, the help desk, and district systems.</p><p>If you do not have an account yet, ask your school administrator or open a ticket selecting <b>Account Request</b> as the help topic.</p>',
  'account,login,arahOS,network', '', @now, @now),
 (@cat_start, 1, 'How do I reset my password?',
- '<p>Visit the Password Reset Portal or contact the help desk. To reset:</p><ol><li>Go to <b>http://it.arahOS.example</b></li><li>Click <b>Forgot Password</b></li><li>Enter your arahOS email and follow the emailed instructions</li></ol><p>If you are locked out, open a ticket or call STX (340) 774-0100 or STTJ (340) 775-2250.</p>',
+ '<p>Visit the Password Reset Portal or contact the help desk. To reset:</p><ol><li>Go to <b>http://it.arahOS.example</b></li><li>Click <b>Forgot Password</b></li><li>Enter your arahOS email and follow the emailed instructions</li></ol><p>If you are locked out, open a ticket or call the main line (555) 555-0100 or the after-hours line (555) 555-0120.</p>',
  'password,reset,locked out,forgot', '', @now, @now),
 (@cat_tickets, 1, 'How do I open a support ticket?',
  '<p>Click <b>Open a New Ticket</b> on the help desk home page, choose the help topic that best matches your issue, fill in the details, and submit. You will receive a ticket number by email to track progress.</p>',
@@ -29,7 +29,7 @@ INSERT INTO ost_faq (category_id, ispublished, question, answer, keywords, notes
  '<p>Most tickets receive a first response within one business day. Urgent issues affecting a whole school or classroom are prioritized. You can add a reply to your ticket at any time to provide more information.</p>',
  'response time,sla,how long,wait', '', @now, @now),
 (@cat_tutorials, 1, 'Tutorial: Setting up arahOS email on your phone',
- '<p><b>Step-by-step:</b></p><ol><li>Open your mail app and choose <b>Add Account &rarr; Exchange / Office 365</b>.</li><li>Enter your full arahOS email address (firstname.lastname@k12.vi).</li><li>Enter your arahOS network password.</li><li>Accept the security prompts and allow sync.</li><li>Your mail, calendar, and contacts will begin syncing.</li></ol><p>Trouble? Open a ticket with help topic <b>Email</b>.</p>',
+ '<p><b>Step-by-step:</b></p><ol><li>Open your mail app and choose <b>Add Account &rarr; Exchange / Office 365</b>.</li><li>Enter your full demo email address (firstname.lastname@example.com).</li><li>Enter your arahOS network password.</li><li>Accept the security prompts and allow sync.</li><li>Your mail, calendar, and contacts will begin syncing.</li></ol><p>Trouble? Open a ticket with help topic <b>Email</b>.</p>',
  'email,mobile,phone,setup,exchange,office 365', '', @now, @now),
 (@cat_tutorials, 1, 'Tutorial: Connecting to the arahOS Wi-Fi network',
  '<p><b>Step-by-step:</b></p><ol><li>Open Wi-Fi settings on your device.</li><li>Select the <b>arahOS-Staff</b> network.</li><li>Enter your arahOS username and password when prompted.</li><li>Accept the certificate if asked.</li></ol><p>For classroom or student devices, contact your site technician or open a ticket with help topic <b>Network</b>.</p>',

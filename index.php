@@ -122,7 +122,7 @@ arahOSLoadStatus();setInterval(arahOSLoadStatus,60000);
     <div class="arahOS-frontpage arahOS-frontpage-side">
       <div class="arahOS-frontpage-head">
         <h2><?php echo __('Important Information'); ?></h2>
-        <p><?php echo __('Quick answers from the OIT team.'); ?></p>
+        <p><?php echo __('Quick answers from the help desk team.'); ?></p>
       </div>
       <div class="arahOS-accordion">
       <?php foreach ($faqs as $F) { ?>

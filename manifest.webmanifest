@@ -1,7 +1,7 @@
 {
-  "name": "arahOS Help Desk",
-  "short_name": "arahOS Help Desk",
-  "description": "arahOS Support Portal",
+  "name": "tikova Help Desk",
+  "short_name": "tikova Help Desk",
+  "description": "tikova Support Portal",
   "id": "/",
   "start_url": "/index.php",
   "scope": "/",

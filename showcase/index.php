@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>arahOS Help Desk</title>
+<title>tikova Help Desk</title>
 <meta name="description" content="Sample help desk for demonstration.">
 <meta name="theme-color" content="#0a1f44">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -19,8 +19,8 @@
 <body<?php if (basename($_SERVER['SCRIPT_NAME']) === 'index.php') echo ' class="arahOS-front"'; ?>>
 <header id="header" class="arahOS-header">
   <div class="arahOS-header-inner">
-    <a class="arahOS-header-logo" href="/showcase/index.php" title="arahOS Help Desk">
-      <img src="/showcase/images/arahOS/arahOS-banner-logo.png" alt="arahOS Help Desk" class="arahOS-header-logo-img">
+    <a class="arahOS-header-logo" href="/showcase/index.php" title="tikova Help Desk">
+      <img src="/showcase/images/arahOS/arahOS-banner-logo.png" alt="tikova Help Desk" class="arahOS-header-logo-img">
     </a>
     <button class="arahOS-mobile-toggle" aria-label="Toggle navigation menu" type="button">&#9776;</button>
     <nav class="arahOS-header-nav">
@@ -43,7 +43,7 @@
   <section class="arahOS-hero" id="landing_page">
     <div class="arahOS-hero-inner">
       <h1>How can we help you today?</h1>
-      <p class="arahOS-hero-sub"><strong>Welcome to the arahOS Help Desk.</strong><br>Search the knowledge base for answers, or open a ticket and our team will get back to you.</p>
+      <p class="arahOS-hero-sub"><strong>Welcome to the tikova Help Desk.</strong><br>Search the knowledge base for answers, or open a ticket and our team will get back to you.</p>
       <form class="arahOS-hero-search" method="get" action="/kb/index.php">
         <input type="text" name="q" placeholder="Search our knowledge base" aria-label="Search our knowledge base">
         <button type="submit">Search</button>
@@ -64,7 +64,7 @@
           <div class="arahOS-status-icon">&#9989;</div>
           <div>
             <div class="arahOS-status-title">All systems operational</div>
-            <div class="arahOS-status-sub">arahOS help desk status &amp; contact channels.</div>
+            <div class="arahOS-status-sub">tikova help desk status &amp; contact channels.</div>
           </div>
         </div>
         <div class="arahOS-status-grid">
@@ -82,7 +82,7 @@
       </div>
     </aside>
     <main class="arahOS-col-main arahOS-intro">
-      <h2>Welcome to the arahOS Help Desk</h2>
+      <h2>Welcome to the tikova Help Desk</h2>
       <p>This is a sample help desk for demonstration. Submit a support ticket and our team will get back to you.</p>
       <h3>How it works</h3>
       <p><strong>1. Open a ticket</strong> &mdash; Describe your issue and we will assign a technician. You will get a confirmation email with your ticket number.</p>
@@ -113,7 +113,7 @@
 
 <footer id="footer" class="arahOS-footer">
   <div class="arahOS-footer-inner">
-    <div>Copyright &copy; <?php echo date('Y'); ?> arahOS Help Desk &mdash; All rights reserved.</div>
+    <div>Copyright &copy; <?php echo date('Y'); ?> tikova Help Desk &mdash; All rights reserved.</div>
   </div>
 </footer>
 

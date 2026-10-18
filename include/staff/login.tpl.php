@@ -19,7 +19,7 @@ $checked = date('M j, Y · g:ia');
       </div>
 
       <h2>arahOS Help Desk</h2>
-      <p class="vl-sub">Enter your arahOS network credentials</p>
+      <p class="vl-sub">Enter your network credentials</p>
 
       <?php $is_err = ($_POST && $errors) || $show_reset; ?>
       <h3 id="login-message" class="vl-msg <?php echo $msg ? 'show' : ''; ?> <?php echo $is_err ? 'error' : ''; ?>"><?php echo Format::htmlchars($msg); ?></h3>
@@ -58,7 +58,7 @@ $checked = date('M j, Y · g:ia');
             </div>
             <p class="vl-hint">
               Sign in with your username (e.g. <strong>firstname.lastname</strong>).<br>
-              You may also use <strong>firstname.lastname@arahOS.vi</strong> or <strong>firstname.lastname@k12.vi</strong>.
+              You may also use <strong>firstname.lastname@example.com</strong>.
             </p>
             <button class="vl-signin" type="submit" name="submit"><?php echo __('Sign in'); ?></button>
 
@@ -90,7 +90,7 @@ $checked = date('M j, Y · g:ia');
   <div id="arahOS-login-right">
     <div class="vl-panel">
       <h3>Support services</h3>
-      <p class="vl-panelsub">arahOS help desk status &amp; contact channels.</p>
+      <p class="vl-panelsub">tikova help desk status &amp; contact channels.</p>
 
       <span class="vl-allok"><span class="dot"></span> All systems operational</span>
 
@@ -108,19 +108,19 @@ $checked = date('M j, Y · g:ia');
         <div class="vl-svc">
           <div class="h"><i class="fa fa-envelope i-green"></i> Email delivery</div>
           <div class="st">Operational</div>
-          <div class="d">SMTP relay 192.168.1.12</div>
+          <div class="d">SMTP relay 192.0.2.12</div>
         </div>
         <div class="vl-svc">
           <div class="h"><i class="fa fa-phone i-blue"></i> Phone support</div>
           <div class="st" style="color:#6db3ff;">Available</div>
-          <div class="d">STX 340-773-1095 · STTJ 774-0100</div>
+          <div class="d">Main 555-0100 · After-hours 555-0120</div>
         </div>
       </div>
 
       <div class="vl-tiles">
         <div class="vl-tile"><b>24/7</b> Monitoring</div>
         <div class="vl-tile"><b>SLA</b> Tracked</div>
-        <div class="vl-tile"><b>ARA</b> Help Desk</div>
+        <div class="vl-tile"><b>IT</b> Help Desk</div>
       </div>
 
       <div class="vl-checked">Last checked: <?php echo $checked; ?></div>

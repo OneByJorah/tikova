@@ -19,7 +19,7 @@ if ($content) {
     <div class="logo-wrap arahOS-banner-logo-wrap">
       <img class="arahOS-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahOS/arahOS-banner-logo.png" alt="<?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?>">
       <h1 class="auth-title"><?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?></h1>
-      <p class="auth-subtitle">Enter your arahOS network credentials</p>
+      <p class="auth-subtitle">Enter your network credentials</p>
     </div>
 
     <div class="form-wrap">
@@ -96,7 +96,7 @@ if ($content) {
   <div id="auth-right">
     <div class="live-panel">
       <h2>Support services</h2>
-      <p class="sub">arahOS help desk status & contact channels.</p>
+      <p class="sub">tikova help desk status & contact channels.</p>
       <div class="svc-badge"><span class="live-pulse"></span>All systems operational</div>
 
       <div class="svc-cards">
@@ -121,7 +121,7 @@ if ($content) {
           <div class="svc-info">
             <div class="name">Email delivery</div>
             <div class="state">Operational</div>
-            <div class="detail">SMTP relay 192.168.1.12</div>
+            <div class="detail">SMTP relay 192.0.2.12</div>
           </div>
         </div>
         <div class="svc-card">
@@ -129,7 +129,7 @@ if ($content) {
           <div class="svc-info">
             <div class="name">Phone support</div>
             <div class="state">Available</div>
-            <div class="detail">STX 340-773-1095 · STTJ 774-0100</div>
+            <div class="detail">Main 555-0100 · After-hours 555-0120</div>
           </div>
         </div>
       </div>
@@ -144,8 +144,8 @@ if ($content) {
           <div class="lbl">Tracked</div>
         </div>
         <div class="live-stat">
-          <div class="num">ARA</div>
-          <div class="lbl">OIT Help Desk</div>
+          <div class="num">IT</div>
+          <div class="lbl">Help Desk</div>
         </div>
       </div>
 

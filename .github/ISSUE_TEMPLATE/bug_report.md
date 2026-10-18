@@ -26,7 +26,7 @@ If applicable, add screenshots or log output.
 
 - OS:
 - Browser/runtime version:
-- ArahOStheme version or branch:
+- tikova version or branch:
 
 **Additional context**
 Add any other context here.
