@@ -10,3 +10,7 @@ __pycache__/
 
 # OneByJorah portfolio tooling
 .venv-screenshot/
+
+# Local env + JS deps
+.env
+node_modules/
