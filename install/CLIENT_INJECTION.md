@@ -3,17 +3,20 @@
 File to edit: `include/client/header.inc.php`
 
 1. **Back up the file first:**
+
    ```bash
    cp include/client/header.inc.php include/client/header.inc.php.bak
    ```
 
 2. Open it and find the line that loads osTicket's own stylesheet — it will
    look something like this (exact path may vary slightly by build):
+
    ```php
    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/style.css?<?php echo $ost_version; ?>">
    ```
 
 3. Immediately **after** that line, add:
+
    ```php
    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/helpdesk/helpdesk-tokens.css">
    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/helpdesk/helpdesk-client-portal.css">
@@ -21,6 +24,7 @@ File to edit: `include/client/header.inc.php`
 
 4. Right before the closing `</body>` tag (usually in
    `include/client/footer.inc.php`), add:
+
    ```php
    <script src="<?php echo ROOT_PATH; ?>js/helpdesk/helpdesk-client-portal.js"></script>
    ```

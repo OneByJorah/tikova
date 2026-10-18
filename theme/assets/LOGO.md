@@ -3,7 +3,7 @@
 Drop your official helpdesk logo (PNG or SVG, transparent background,
 ~200x60px works well) at:
 
-```
+```text
 images/helpdesk/helpdesk-logo.png
 ```
 
