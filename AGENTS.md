@@ -4,8 +4,8 @@ Instructions for AI coding agents (OpenCode, Freebuff/Codebuff, Hermes workers, 
 
 ## Project
 
-- **What it is:** replace with one sentence.
-- **Stack:** replace (language, framework, runtime).
+- **What it is:** Merged osTicket 1.18.x helpdesk theme + plugin (client portal, staff logins, landing page, PWA assets) with a Docker preview stack.
+- **Stack:** PHP templates for osTicket, CSS/JS theme assets, Node static preview server, Docker Compose.
 - **Run locally:** `cp .env.example .env && docker compose up -d --build`, then open `http://127.0.0.1:8080`.
 - **Health check:** `GET /healthz` must return 200.
 
